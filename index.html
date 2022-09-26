@@ -12,17 +12,17 @@
     <script>
 
         
-        var i = 3
+        var i = 5
 
         function countdown() {
 
+
+            i -= 1
+
             document.getElementById("countdown").innerHTML = i
 
-            if (i > 0) {
-                
-                i -= 1
 
-            } else {
+            if (i < 0) {
                 
                 document.location.href = "https://youtu.be/dQw4w9WgXcQ"
 
