@@ -7,10 +7,32 @@
 <body>
     
     <h1>Work in progress =)</h1>
+    <p id="countdown">3</p>
 
     <script>
 
-        document.location.href = "https://youtu.be/dQw4w9WgXcQ"
+        
+        var i = 3
+
+        function countdown() {
+
+            document.getElementById("countdown") = i
+
+            if (i > 0) {
+                
+                i -= 1
+                setTimeout(countdown, 1000)
+
+            } else {
+                
+                document.location.href = "https://youtu.be/dQw4w9WgXcQ"
+
+            }
+
+
+        }
+
+        countdown()
 
     </script>
 
